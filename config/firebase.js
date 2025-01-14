@@ -3,7 +3,7 @@ import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 import Constants from "expo-constants";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// add firebase config
+// Add Firebase config securely from environment variables
 const firebaseConfig = {
   apiKey: Constants.expoConfig?.extra?.apiKey,
   authDomain: Constants.expoConfig?.extra?.authDomain,
@@ -13,12 +13,17 @@ const firebaseConfig = {
   appId: Constants.expoConfig?.extra?.appId,
 };
 
-// initialize firebase
+// Ensure Firebase config is provided
+if (!firebaseConfig.apiKey) {
+  throw new Error("Firebase configuration is missing or incomplete!");
+}
+
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// initialize auth; only for native platforms (Android and iOS)
+// Initialize Firebase Auth (native platforms only)
 const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });
 
-export { auth };
+export { app, auth };
