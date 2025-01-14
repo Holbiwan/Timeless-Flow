@@ -1,41 +1,38 @@
 import { useState } from 'react';
 
+/**
+ * Custom hook to manage password and confirm password visibility
+ * @returns {object} - Contains visibility states and handlers for password and confirm password fields
+ */
 export const useTogglePasswordVisibility = () => {
-  // password will not be initially visible
+  // States for password visibility and icon
   const [passwordVisibility, setPasswordVisibility] = useState(true);
-  const [rightIcon, setRightIcon] = useState('eye');
+  const [confirmPasswordVisibility, setConfirmPasswordVisibility] = useState(true);
+
+  // States for the right icons
+  const [passwordIcon, setPasswordIcon] = useState('eye');
   const [confirmPasswordIcon, setConfirmPasswordIcon] = useState('eye');
-  const [confirmPasswordVisibility, setConfirmPasswordVisibility] =
-    useState(true);
 
-  // function that toggles password visibility on a TextInput component on a password field
-  const handlePasswordVisibility = () => {
-    if (rightIcon === 'eye') {
-      setRightIcon('eye-off');
+  /**
+   * Toggles visibility and updates the icon for the given field
+   * @param {string} field - Field to toggle ('password' or 'confirmPassword')
+   */
+  const toggleVisibility = (field) => {
+    if (field === 'password') {
       setPasswordVisibility(!passwordVisibility);
-    } else if (rightIcon === 'eye-off') {
-      setRightIcon('eye');
-      setPasswordVisibility(!passwordVisibility);
-    }
-  };
-
-  // function that toggles password visibility on a TextInput component on a confirm password field
-  const handleConfirmPasswordVisibility = () => {
-    if (confirmPasswordIcon === 'eye') {
-      setConfirmPasswordIcon('eye-off');
+      setPasswordIcon(passwordVisibility ? 'eye-off' : 'eye');
+    } else if (field === 'confirmPassword') {
       setConfirmPasswordVisibility(!confirmPasswordVisibility);
-    } else if (confirmPasswordIcon === 'eye-off') {
-      setConfirmPasswordIcon('eye');
-      setConfirmPasswordVisibility(!confirmPasswordVisibility);
+      setConfirmPasswordIcon(confirmPasswordVisibility ? 'eye-off' : 'eye');
     }
   };
 
   return {
     passwordVisibility,
-    handlePasswordVisibility,
-    rightIcon,
     confirmPasswordVisibility,
-    handleConfirmPasswordVisibility,
-    confirmPasswordIcon
+    passwordIcon,
+    confirmPasswordIcon,
+    togglePasswordVisibility: () => toggleVisibility('password'),
+    toggleConfirmPasswordVisibility: () => toggleVisibility('confirmPassword'),
   };
 };
