@@ -1,14 +1,10 @@
-import * as React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
+import FeedbackScreen from '../screens/FeedbackScreen';
 
-import { HomeScreen } from "../screens";
-
-const Stack = createStackNavigator();
-
-export const AppStack = () => {
+function AppStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
+      {/* Autres écrans */}
+      <Stack.Screen name="Feedback" component={FeedbackScreen} />
     </Stack.Navigator>
   );
-};
+}
