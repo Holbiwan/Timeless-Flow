@@ -1,11 +1,12 @@
 # Timeless Flow  🚀
-# Mobile App
+### Mobile App
 
-## **"Bridging the gap with timeless talent”**
+### **"Bridging the gap with timeless talent”**
 
 ![logo image](https://zupimages.net/up/25/02/dn9f.png)
 ![Supports Expo iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)
-![Supports Expo Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)
+![Supports Expo Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)  
+-
 [![Runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
 **Timeless Flow** is a mobile application developed with **Expo** and **Firebase**, offering essential features for modern and intuitive management. This app includes login, signup, password reset, and secure home screens.
@@ -100,22 +101,13 @@ Timeless Flow
 
 ## Technologies Used
 
-- **Expo SDK 50**: For mobile app development
+- **Expo SDK**: For mobile app development
 - **Firebase**: Backend for authentication and data
 - **React Navigation**: Screen and route management
 - **Formik & Yup**: Form validation
 - **React Native Vector Icons**: Custom icons
-- **Keyboard Aware ScrollView**: Intuitive keyboard handling
+- ** **: 
 
-## Contribution
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository
-2. Create a branch for your feature: `git checkout -b feature/new-feature`
-3. Commit your changes: `git commit -m 'Add new feature'`
-4. Push the branch: `git push origin feature/new-feature`
-5. Open a Pull Request
 
 ## License
 
