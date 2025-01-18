@@ -10,10 +10,6 @@
 ![logo image](https://zupimages.net/up/25/02/dn9f.png)
 
 
-
-
-
-
 ### Social Media
 
 X (ex twitter)   : <https://x.com/Holbiwan_Place> 
