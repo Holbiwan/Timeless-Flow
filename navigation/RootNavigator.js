@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { AuthStack } from "./AuthStack";
 import { AppStack } from "./AppStack";
 import { AuthenticatedUserContext } from "../providers";
-import { LoadingIndicator } from "../components";
+import { LoadingIndicator } from "../src/components";
 import { auth } from "../config";
 
 export const RootNavigator = () => {

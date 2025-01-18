@@ -5,7 +5,7 @@ import { sendPasswordResetEmail } from "firebase/auth";
 
 import { passwordResetSchema } from "../utils";
 import { Colors, auth } from "../config";
-import { View, TextInput, Button, FormErrorMessage } from "../components";
+import { View, TextInput, Button, FormErrorMessage } from "../src/components";
 
 export const ForgotPasswordScreen = ({ navigation }) => {
   const [errorState, setErrorState] = useState("");

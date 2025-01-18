@@ -40,7 +40,11 @@ Temporary Items
 
 # IDE configuration
 .idea/
+.idea/shelf/
+.idea/workspace.xml
+.idea/tasks.xml
 .vscode/
+.vscode-test/
 
 # Environment variables
 .env
