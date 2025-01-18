@@ -1,4 +1,5 @@
-# TIMELESS Flow
+# TIMELESS Flow 
+# Mobile App
 
 ## **"Bridging the gap with timeless talent”**
 
@@ -7,6 +8,10 @@
 *Full Stack Developer - FT C#21*
 
 ![logo image](https://zupimages.net/up/25/02/dn9f.png)
+
+
+
+
 
 
 ### Social Media
