@@ -94,8 +94,9 @@ Timeless Flow
 - **Expo SDK**: For mobile app development
 - **Firebase**: Backend for authentication and data
 - **React Navigation**: Screen and route management
-- **Formik & Yup**: Form validation
-- **React Native Vector Icons**: Custom icons
+- **Firestore**: Flexible database and create requests
+- **Jest**: Unit tests
+- **Figma**: Design UI UX
 
 ## License
 
