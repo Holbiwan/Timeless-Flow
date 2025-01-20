@@ -88,16 +88,16 @@ Timeless Flow
 ## Screenshots
 
 ### Login Screen
-![Login Screen](./screenshots/img1.png)
+
 
 ### Successful Signup
-![Signup Screen](./screenshots/img2.png)
+
 
 ### Password Reset
-![Forgot Password Screen](./screenshots/img3.png)
+
 
 ### Field Validation
-![Validation](./screenshots/img4.png)
+
 
 ## Technologies Used
 
