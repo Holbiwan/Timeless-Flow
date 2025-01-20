@@ -3,9 +3,10 @@
 
 # Timeless Flow  🚀
 
-### **"Bridging the gap with timeless talent”**
+### **"Bridging the gap with timeless talent”** 
 
-![logo image](https://zupimages.net/up/25/02/dn9f.png)
+<img src="https://zupimages.net/up/25/02/dn9f.png" alt="En cours de production" width="300"/>
+
 ![Supports Expo iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)
 ![Supports Expo Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)  
 -
