@@ -8,9 +8,9 @@ export default {
     platforms: ["ios", "android"],
     version: "0.19.0",
     orientation: "portrait",
-    icon: "./assets/flame.png",
+    icon: "./assets/images/TimelessLogo.png",
     splash: {
-      image: "./assets/splash.png",
+      image: "./assets/images/splash.png",
       resizeMode: "cover",
       backgroundColor: "#F57C00",
     },
