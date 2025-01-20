@@ -28,10 +28,6 @@ export default {
       storageBucket: process.env.STORAGE_BUCKET,
       messagingSenderId: process.env.MESSAGING_SENDER_ID,
       appId: process.env.APP_ID,
-      eas: {
-        projectId: "eb2a64e6-f793-4c6a-8745-cdfb1708377c",
-      },
     },
-    owner: "holbiwan971",
   },
 };

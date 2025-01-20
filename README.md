@@ -35,7 +35,9 @@
    ```
 
 3. Configure your Firebase variables:
-  
+   - Rename the file `example.env` to `.env`.
+   - Update the Firebase keys in `.env`:
+     ```env
      API_KEY=XXXX
      AUTH_DOMAIN=XXXX
      PROJECT_ID=XXXX

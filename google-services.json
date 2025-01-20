@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "241868064078",
+    "project_id": "timeless-flow-mobile-app",
+    "storage_bucket": "timeless-flow-mobile-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241868064078:android:3ee1954c2f387182cd0a1f",
+        "android_client_info": {
+          "package_name": "timeless.flow.mobile.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkmXca-7HuoezuLExuR4he1fHKRvk9qrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
