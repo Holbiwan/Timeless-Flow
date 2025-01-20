@@ -31,21 +31,8 @@
 
 2. Install dependencies:
    ```bash
-   yarn install
+   npm install
    ```
-
-3. Configure your Firebase variables:
-   - Rename the file `example.env` to `.env`.
-   - Update the Firebase keys in `.env`:
-     ```env
-     API_KEY=XXXX
-     AUTH_DOMAIN=XXXX
-     PROJECT_ID=XXXX
-     STORAGE_BUCKET=XXXX
-     MESSAGING_SENDER_ID=XXXX
-     APP_ID=XXXX
-     ```
-
 ## Running the Project
 
 To start the development server:
