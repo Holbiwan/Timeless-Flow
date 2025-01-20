@@ -106,8 +106,6 @@ Timeless Flow
 - **React Navigation**: Screen and route management
 - **Formik & Yup**: Form validation
 - **React Native Vector Icons**: Custom icons
-- ** **: 
-
 
 ## License
 
