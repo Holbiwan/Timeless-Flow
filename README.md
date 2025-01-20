@@ -1,6 +1,5 @@
 # 🛠️Mobile app -  Work in Progress
-![En cours de production](https://zupimages.net/up/25/04/w3lt.png)
-
+<img src="https://zupimages.net/up/25/04/w3lt.png" alt="En cours de production" width="500"/>
 
 # Timeless Flow  🚀
 
