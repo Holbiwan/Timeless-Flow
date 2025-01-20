@@ -113,7 +113,7 @@ This application is licensed under the MIT License. See the [LICENSE](./LICENSE)
 
 ---
 
-Developed with ❤️ by **Sabrina PAPEAU**.
+Developed with by **Sabrina PAPEAU**.
 
 ### Social Media
 
