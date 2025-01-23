@@ -9,7 +9,7 @@ export default {
     version: "0.19.0",
     orientation: "portrait",
     icon: "./assets/images/TimelessLogo.png",
-    splash: {
+    splash: {       
       image: "./assets/images/splash.png",
       resizeMode: "cover",
       backgroundColor: "#F57C00",
@@ -18,8 +18,15 @@ export default {
       fallbackToCacheTimeout: 0,
     },
     assetBundlePatterns: ["**/*"],
+    android: {
+      package: "com.timeless.flow",
+      versionCode: 1,
+      permissions: [],
+    },
     ios: {
-      supportsTablet: true,
+      bundleIdentifier: "com.timeless.flow",
+      buildNumber: "1.0.0",
+      supportsTablet: true, 
     },
     extra: {
       apiKey: process.env.API_KEY,
