@@ -1,7 +1,14 @@
-// Centralized image management for the application
-export const Images = {
-  logo: require("../assets/TimelessLogo.png"), // Main logo for the app
-  // Add other images below as needed
-  splash: require("../assets/splash.png"), // Splash screen image
-  icon: require("../assets/icon.png"), // App icon
+// imagesManagement.js
+const Images = {
+  logo: require('./images/logo.png'),
+  splash: require('./images/splash.png'),
+  // Ajoutez d'autres images ici
 };
+
+const Icons = {
+  home: require('./icons/home.png'),
+  settings: require('./icons/settings.png'),
+  // Ajoutez d'autres icônes ici
+};
+
+export { Images, Icons };
