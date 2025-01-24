@@ -1,3 +1,4 @@
+//Forgot Password Screen
 import React, { useState } from "react";
 import { StyleSheet, Text } from "react-native";
 import { Formik } from "formik";
@@ -5,18 +6,23 @@ import { sendPasswordResetEmail } from "firebase/auth";
 
 import { passwordResetSchema } from "../utils";
 import { Colors, auth } from "../config";
-import { View, TextInput, Button, FormErrorMessage } from "../src/components";
+import { View, TextInput, Button, FormErrorMessage } from "../components";
 
 export const ForgotPasswordScreen = ({ navigation }) => {
   const [errorState, setErrorState] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleSendPasswordResetEmail = (values) => {
     const { email } = values;
 
+    // Reset error and success state
+    setErrorState("");
+    setSuccessMessage("");
+
     sendPasswordResetEmail(auth, email)
       .then(() => {
+        setSuccessMessage("Password reset email sent successfully.");
         console.log("Success: Password Reset Email sent.");
-        navigation.navigate("Login");
       })
       .catch((error) => setErrorState(error.message));
   };
@@ -53,10 +59,14 @@ export const ForgotPasswordScreen = ({ navigation }) => {
               onBlur={handleBlur("email")}
             />
             <FormErrorMessage error={errors.email} visible={touched.email} />
-            {/* Display Screen Error Mesages */}
-            {errorState !== "" ? (
+            {/* Display Screen Error Messages */}
+            {errorState !== "" && (
               <FormErrorMessage error={errorState} visible={true} />
-            ) : null}
+            )}
+            {/* Display success message */}
+            {successMessage !== "" && (
+              <Text style={styles.successMessage}>{successMessage}</Text>
+            )}
             {/* Password Reset Send Email  button */}
             <Button style={styles.button} onPress={handleSubmit}>
               <Text style={styles.buttonText}>Send Reset Email</Text>
@@ -78,7 +88,7 @@ export const ForgotPasswordScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.black, // Changed to black for dark mode
     paddingHorizontal: 12,
   },
   innerContainer: {
@@ -87,7 +97,7 @@ const styles = StyleSheet.create({
   screenTitle: {
     fontSize: 32,
     fontWeight: "700",
-    color: Colors.black,
+    color: Colors.white, // Changed to white for dark mode
     paddingTop: 20,
   },
   button: {
@@ -95,7 +105,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 8,
-    backgroundColor: Colors.orange,
+    backgroundColor: Colors.primary, // Use theme color
     padding: 10,
     borderRadius: 8,
   },
@@ -108,5 +118,11 @@ const styles = StyleSheet.create({
     marginTop: 16,
     alignItems: "center",
     justifyContent: "center",
+  },
+  successMessage: {
+    fontSize: 16,
+    color: Colors.secondary, // Use theme secondary color
+    marginVertical: 10,
+    textAlign: "center",
   },
 });
