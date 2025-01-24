@@ -109,9 +109,6 @@ Developed with by **Sabrina PAPEAU**.
 ### Social Media
 
 X (ex twitter)   : <https://x.com/Holbiwan_Place> 
-
-LinkedIn         : <https://linkedin.com/in/sabrina-papeau>
-
+LinkedIn         : <https://linkedin.com/in/sabrina-papeau> 
 Facebook         : <https://www.facebook.com/Holbiwan.Saby> 
-
 Instagram        : <https://www.instagram.com/holbiwan.saby/> 
