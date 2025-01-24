@@ -1,7 +1,7 @@
-// App theme configuration
+//theme.js
 export const Colors = {
   // Primary and secondary colors
-  primary: "#6bff", // Light blue
+  primary: "#00bfff", // light blue
   secondary: "#FF4500", //orange
 
   // Neutral colors

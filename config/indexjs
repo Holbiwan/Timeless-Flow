@@ -1,0 +1,2 @@
+export { Colors, Theme } from './theme';
+export { auth } from './firebaseConfig';

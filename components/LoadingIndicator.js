@@ -1,8 +1,8 @@
+//LoadingIndicator.js
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ActivityIndicator, StyleSheet } from 'react-native';
-
-import { Colors } from '../../config';
+import { Colors } from '../../config/';
 import { View } from './View';
 
 /**
