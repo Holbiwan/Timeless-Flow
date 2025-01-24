@@ -1,10 +1,15 @@
-import FeedbackScreen from '../screens/FeedbackScreen';
+//AppStack.js
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import { FeedbackScreen, HomeScreen } from '../screens';
 
-function AppStack() {
+const Stack = createStackNavigator();
+
+export const AppStack = () => {
   return (
     <Stack.Navigator>
-      {/* Autres écrans */}
+      <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Feedback" component={FeedbackScreen} />
     </Stack.Navigator>
   );
-}
+};

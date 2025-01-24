@@ -1,24 +1,24 @@
-// Centralized config exports
-// This file consolidates all configurations for easy imports elsewhere in the app
+//index.js
 
-// Visual assets
-import { Images } from "./images";
-import { Colors } from "../config/theme";
+// Screens
+import { LoginScreen } from '../screens/LoginScreen';
+import { SignupScreen } from '../screens/SignupScreen';
+import { HomeScreen } from '../screens/HomeScreen';
+import { ForgotPasswordScreen } from '../screens/ForgotPasswordScreen';
+
+// Config & Theme
+import { Colors } from '../config/theme';
+import { Images } from '../config/images';
 
 // Firebase services
-import { auth } from "./firebase";
-import { LoginScreen } from "./LoginScreen";
-import { SignupScreen } from "./SignupScreen";
-import { HomeScreen } from "./HomeScreen";
-import { ForgotPasswordScreen } from "./ForgotPasswordScreen";
-
-export { LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen };
-
+import { auth } from '../config/firebaseConfig';
 
 export {
-  Images, // App images (logos, icons, etc.)
-  Colors, // Theme colors for consistent styling
-  auth,   // Firebase authentication instance
+  LoginScreen,
+  SignupScreen,
+  HomeScreen,
+  ForgotPasswordScreen,
+  Colors,
+  Images,
+  auth,
 };
-
-
