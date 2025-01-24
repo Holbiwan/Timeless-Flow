@@ -1,23 +1,27 @@
-// App.js.
 import React from 'react';
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { ThemeProvider } from "react-native-elements";
 import { AuthenticatedUserProvider } from "./src/providers";
 import { RootNavigator } from "./navigation/RootNavigator";
-import theme from "./config/theme"; // Import theme
+import { View, StyleSheet } from 'react-native';
 
-export default function App() {
-  return <Navigation />;
-}
-
-export default function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <AuthenticatedUserProvider>
         <SafeAreaProvider>
-          <RootNavigator />
+          <View style={styles.container}>
+            <RootNavigator />
+          </View>
         </SafeAreaProvider>
       </AuthenticatedUserProvider>
     </ThemeProvider>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#000000", // Black
+  },
+});
