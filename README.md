@@ -77,6 +77,8 @@ Timeless Flow
 
 ## Screenshots
 
+Coming soon ...
+
 ### Login Screen
 
 
@@ -98,7 +100,7 @@ Timeless Flow
 - **Jest**: Unit tests
 - **Figma**: Design UI UX
 
-## License
+### License
 
 This application is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
@@ -106,9 +108,10 @@ This application is licensed under the MIT License. See the [LICENSE](./LICENSE)
 
 Developed with by **Sabrina PAPEAU**.
 
-### Social Media
 
-X (ex twitter)   : <https://x.com/Holbiwan_Place> 
-LinkedIn         : <https://linkedin.com/in/sabrina-papeau> 
-Facebook         : <https://www.facebook.com/Holbiwan.Saby> 
-Instagram        : <https://www.instagram.com/holbiwan.saby/> 
+## Social Media
+
+- **X (ex Twitter)**: [https://x.com/Holbiwan_Place](https://x.com/Holbiwan_Place)  
+- **LinkedIn**: [https://linkedin.com/in/sabrina-papeau](https://linkedin.com/in/sabrina-papeau)  
+- **Facebook**: [https://www.facebook.com/Holbiwan.Saby](https://www.facebook.com/Holbiwan.Saby)  
+- **Instagram**: [https://www.instagram.com/holbiwan.saby/](https://www.instagram.com/holbiwan.saby/)  
