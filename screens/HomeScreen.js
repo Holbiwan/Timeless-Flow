@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, Button, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../config";
+import { Logo } from '../components';
 
 export const HomeScreen = () => {
   const navigation = useNavigation();

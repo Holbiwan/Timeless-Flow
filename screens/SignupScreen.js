@@ -8,6 +8,8 @@ import { View, TextInput, Logo, Button, FormErrorMessage } from "../src/componen
 import { Images, Colors, auth } from "../config";
 import { useTogglePasswordVisibility } from "../src/hooks";
 import { signupValidationSchema } from "../utils";
+import { InputField, Button } from '../components';
+
 
 export const SignupScreen = ({ navigation }) => {
   const [errorState, setErrorState] = useState("");
