@@ -1,9 +1,7 @@
-//RootNavigator.js
 import React, { useState, useContext, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { onAuthStateChanged } from 'firebase/auth';
-
-import { AuthenticatedUserContext } from '../providers';
+import { AuthenticatedUserContext } from '../src/providers';
 import { LoadingIndicator } from '../components/LoadingIndicator';
 import { auth } from '../config';
 import { AppStack } from './AppStack';
@@ -26,5 +24,9 @@ export const RootNavigator = () => {
     return <LoadingIndicator />;
   }
 
-  return <>{user ? <AppStack /> : <AuthStack />}</>;
+  return (
+    <NavigationContainer>
+      {user ? <AppStack /> : <AuthStack />}
+    </NavigationContainer>
+  );
 };
