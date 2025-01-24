@@ -5,7 +5,16 @@ import { AuthenticatedUserProvider } from "./src/providers";
 import { RootNavigator } from "./navigation/RootNavigator";
 import { View, StyleSheet } from 'react-native';
 
-const App = () => {
+// Define theme
+const theme = {
+  colors: {
+    primary: "#4CAF50",
+    secondary: "#FF9800",
+    background: "#000000", // Black background
+  },
+};
+
+export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <AuthenticatedUserProvider>
@@ -17,11 +26,11 @@ const App = () => {
       </AuthenticatedUserProvider>
     </ThemeProvider>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000000", // Black
+    backgroundColor: theme.colors.background, // Use theme's background color
   },
 });
