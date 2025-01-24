@@ -3,7 +3,7 @@ import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 import Constants from "expo-constants";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Add Firebase config securely from environment variables
+// Add securise firebase configuration
 const firebaseConfig = {
   apiKey: Constants.expoConfig?.extra?.apiKey,
   authDomain: Constants.expoConfig?.extra?.authDomain,
@@ -13,17 +13,26 @@ const firebaseConfig = {
   appId: Constants.expoConfig?.extra?.appId,
 };
 
-// Ensure Firebase config is provided
-if (!firebaseConfig.apiKey) {
-  throw new Error("Firebase configuration is missing or incomplete!");
+// Add a log to check the firebase configuration dev mode
+if (__DEV__) {
+  console.log("Firebase configuration (dev mode):", firebaseConfig);
 }
 
-// Initialize Firebase
+// Validate the firebase keys are present
+const requiredKeys = ["apiKey", "authDomain", "projectId", "storageBucket", "messagingSenderId", "appId"];
+requiredKeys.forEach(key => {
+  if (!firebaseConfig[key]) {
+    throw new Error(`Missing Firebase configuration key: ${key}`);
+  }
+});
+
+// Initialize the firebase app
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firebase Auth (native platforms only)
+// Initialize the firebase auth
 const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });
 
 export { app, auth };
+
