@@ -1,21 +1,17 @@
-// metro.config.js
-// Required by Metro bundler to support .cjs files for Firebase.
-// More info: https://docs.expo.dev/guides/using-firebase/#configure-metro
 const { getDefaultConfig } = require("@expo/metro-config");
 
 const defaultConfig = getDefaultConfig(__dirname);
 
-// Adding the .cjs extension for Firebase files
+// Add extension .cjs to sourceExts
 defaultConfig.resolver.sourceExts.push("cjs");
+defaultConfig.resolver.sourceExts = [...defaultConfig.resolver.sourceExts, "jsx", "js", "ts", "tsx"];
 
-// Adding aliases for paths in the project
+
+// Add alias for config, components and screens
 defaultConfig.resolver.alias = {
-  screens: "./screens", // Alias to access files in the screens folder
-  components: "./components", // (Optional) You can add other aliases here
-  config: "./config", // (Optional) Alias for the config folder
+    config: "./config", // Alias pour le dossier config
+    components: "./components", // Alias pour le dossier components
+    screens: "./screens", // Alias pour le dossier screens
 };
 
 module.exports = defaultConfig;
-// The code snippet above configures Metro bundler to support .cjs files for Firebase. 
-// It also adds aliases for paths in the project 
-// to make it easier to import files from different directories.

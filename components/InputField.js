@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TextInput as RNTextInput, StyleSheet } from 'react-native';
-
 import { View } from './View';
 import { Icon } from './Icon';
 import { Button } from './Button';
-import { Colors } from '../../config';
+import { Colors } from 'config';
+
 
 /**
  * TextInput Component

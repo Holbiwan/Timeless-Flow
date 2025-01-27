@@ -5,10 +5,9 @@ import { Text, StyleSheet } from "react-native";
 import { Formik } from "formik";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-
 import { View, InputField, Logo, Button, FormErrorMessage } from "../components";
 import { Colors, auth } from "../config";
-import { loginValidationSchema } from "../utils";
+import { loginValidationSchema } from '../utils/yup';
 import { useTogglePasswordVisibility } from "../hooks";
 
 export const LoginScreen = ({ navigation }) => {

@@ -1,12 +1,12 @@
+// SignupScreen.js
 import React, { useState } from "react";
 import { Text, StyleSheet } from "react-native";
 import { Formik } from "formik";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-
 import { View, InputField, Logo, Button, FormErrorMessage } from "../components";
 import { Colors, auth } from "../config";
-import { signupValidationSchema } from "../utils";
+import { signupValidationSchema } from '../utils/yup';
 import { useTogglePasswordVisibility } from "../hooks";
 
 export const SignupScreen = ({ navigation }) => {

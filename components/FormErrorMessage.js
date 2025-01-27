@@ -1,8 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import PropTypes from 'prop-types';
-
-import { Colors } from '../../config';
+import { Colors } from 'config';
 
 /**
  * FormErrorMessage Component
@@ -47,10 +46,4 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
-  
-  The  FormErrorMessage  component is a simple component that displays an error message below form inputs when validation fails. It accepts two props:  error  and  visible . If the  error  prop is empty or the  visible  prop is  false , the component does not render. 
-  The  FormErrorMessage  component uses the  Text  component from React Native to display the error message. It also sets the  accessibilityRole  to  alert  to ensure that screen readers recognize it as an error and sets the  accessibilityLiveRegion  to  assertive  to announce the message immediately. 
-  The component also defines the  PropTypes  for better error checking and sets the default props for  error  and  visible . 
-  Now that we have created the  FormErrorMessage  component, let’s use it in the  FormInput  component. 
-  Using the FormErrorMessage Component 
-  Open the  FormInput.js  file and import the  FormErrorMessage  component. Then, add the  FormErrorMessage  component below the  TextInput  component.
+

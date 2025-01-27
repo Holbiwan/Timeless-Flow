@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Image, StyleSheet } from 'react-native';
+import { Images } from '../config';
 
-import { Images } from '../../config';
 
 /**
  * Logo Component
