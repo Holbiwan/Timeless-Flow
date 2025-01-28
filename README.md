@@ -117,22 +117,6 @@ holbiwan-timeless-flow/
 
 ```
 
-## Screenshots
-
-Coming soon ...
-
-### Login Screen
-
-
-### Successful Signup
-
-
-### Password Reset
-
-
-### Field Validation
-
-
 ## Technologies Used
 
 - **Expo SDK**: For mobile app development
