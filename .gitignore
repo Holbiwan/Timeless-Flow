@@ -58,3 +58,6 @@ screens/Timeless-Flow.code-workspace
 
 # Logs and temporary files
 *.log
+google-services.json
+Timeless-Flow/android/app/google-services.json
+android/app/google-services.json
