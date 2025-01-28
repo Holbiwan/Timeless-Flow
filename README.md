@@ -1,5 +1,4 @@
 # Timeless Flow  🚀 Mobile app -
-<img src="https://zupimages.net/up/25/04/w3lt.png" alt="En cours de production" width="500"/>
 
 ### **"Bridging the gap with timeless talent”** 
 
