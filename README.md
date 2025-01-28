@@ -1,10 +1,8 @@
-# Timeless Flow  🚀 Mobile app -
-
-![Timeless gif pres](https://zupimages.net/up/25/05/ha2s.gif)
+# Timeless Flow  🚀 Mobile app 
 
 ### **"Bridging the gap with timeless talent”** 
 
-<img src="https://zupimages.net/up/25/02/dn9f.png" alt="En cours de production" width="400"/>
+![Timeless gif pres](https://zupimages.net/up/25/05/ha2s.gif)
 
 ![Supports Expo iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)
 ![Supports Expo Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)  
@@ -50,8 +48,6 @@ npx expo run:android
 # Build for iOS
 npx expo run:ios
 ```
-
-## Project Structure
 
 ```plaintext
 holbiwan-timeless-flow/
@@ -132,10 +128,10 @@ holbiwan-timeless-flow/
 
 This application is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
----
+```
 
 Developed with by **Sabrina PAPEAU**.
-
+```
 
 ## Social Media
 
