@@ -3,36 +3,43 @@ import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 import Constants from "expo-constants";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Add securise firebase configuration
+// Retrieve Firebase configuration securely from `Constants.manifest.extra`
+const extra = Constants.manifest?.extra || Constants.expoConfig?.extra;
+
+// Check if Firebase configuration variables exist
+if (!extra) {
+  throw new Error("Firebase config is missing in Constants.manifest.extra or Constants.expoConfig.extra");
+}
+
+// Firebase configuration object
 const firebaseConfig = {
-  apiKey: Constants.expoConfig?.extra?.apiKey,
-  authDomain: Constants.expoConfig?.extra?.authDomain,
-  projectId: Constants.expoConfig?.extra?.projectId,
-  storageBucket: Constants.expoConfig?.extra?.storageBucket,
-  messagingSenderId: Constants.expoConfig?.extra?.messagingSenderId,
-  appId: Constants.expoConfig?.extra?.appId,
+  apiKey: extra.API_KEY,
+  authDomain: extra.AUTH_DOMAIN,
+  projectId: extra.PROJECT_ID,
+  storageBucket: extra.STORAGE_BUCKET,
+  messagingSenderId: extra.MESSAGING_SENDER_ID,
+  appId: extra.APP_ID,
 };
 
-// Add a log to check the firebase configuration dev mode
+// Validate the presence of required Firebase keys
+const requiredKeys = ["apiKey", "authDomain", "projectId", "storageBucket", "messagingSenderId", "appId"];
+requiredKeys.forEach((key) => {
+  if (!firebaseConfig[key]) {
+    throw new Error(`Firebase configuration key is missing: ${key}`);
+  }
+});
+
+// Log the Firebase configuration in development mode only
 if (__DEV__) {
   console.log("Firebase configuration (dev mode):", firebaseConfig);
 }
 
-// Validate the firebase keys are present
-const requiredKeys = ["apiKey", "authDomain", "projectId", "storageBucket", "messagingSenderId", "appId"];
-requiredKeys.forEach(key => {
-  if (!firebaseConfig[key]) {
-    throw new Error(`Missing Firebase configuration key: ${key}`);
-  }
-});
-
-// Initialize the firebase app
+// Initialize the Firebase app
 const app = initializeApp(firebaseConfig);
 
-// Initialize the firebase auth
+// Initialize Firebase authentication with persistence
 const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });
 
 export { app, auth };
-

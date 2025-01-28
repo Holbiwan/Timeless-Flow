@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import PropTypes from 'prop-types';
-import { Colors } from 'config';
+import config from '../config';
 
 /**
  * FormErrorMessage Component
