@@ -37,7 +37,12 @@
 
 To start the development server:
 ```bash
-npx expo start
+expo start
+
+or
+
+yarn start
+
 ```
 
 To create a local build or use a development build:
