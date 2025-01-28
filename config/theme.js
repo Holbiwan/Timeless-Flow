@@ -16,4 +16,3 @@ export const Colors = {
 export const Theme = {
   colors: Colors,
 };
-

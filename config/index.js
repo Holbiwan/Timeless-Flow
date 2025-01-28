@@ -16,4 +16,3 @@ export const Images = {
 
 // Export Firebase auth
 export { auth } from "./firebaseConfig";
-
