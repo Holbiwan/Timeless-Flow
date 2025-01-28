@@ -52,24 +52,69 @@ npx expo run:ios
 ## Project Structure
 
 ```plaintext
-Timeless Flow
-├── assets            # Static assets (images, fonts, etc.)
-├── components        # Reusable UI components
-│   └── Button.js
-│   └── TextInput.js
-│   └── LoadingIndicator.js
-├── config            # Configuration files
-│   └── firebase.js   # Firebase configuration
-│   └── theme.js      # App theme (colors, styles)
-├── navigation        # Navigation management
-│   └── AppStack.js   # Protected routes
-│   └── AuthStack.js  # Authentication routes
-├── screens           # Main app screens
-│   └── LoginScreen.js
+holbiwan-timeless-flow/
+├── README.md
+├── App.js
+├── Index.js
+├── LICENSE
+├── app.config.js
+├── babel.config.js
+├── metro.config.js
+├── package.json
+├── .yarnrc.yml
+├── android/
+│   ├── gradle.properties
+│   ├── gradlew*
+│   ├── app/
+│   │   ├── src/
+│   │   │   ├── debug/AndroidManifest.xml
+│   │   │   └── main/
+│   │   │       ├── AndroidManifest.xml
+│   │   │       ├── java/com/timeless/flow/
+│   │   │       │   ├── MainActivity.kt
+│   │   │       │   └── MainApplication.kt
+│   │   │       └── res/
+│   │   │           ├── drawable/ (logos, assets XML)
+│   │   │           ├── mipmap-*/ (icons for various resolutions)
+│   │   │           └── values/ (XML resources)
+│   └── gradle/wrapper/gradle-wrapper.properties
+├── assets/
+│   ├── fonts/ (custom fonts)
+│   ├── icons/
+│   └── images/
+├── components/
+│   ├── Button.js
+│   ├── FormErrorMessage.js
+│   ├── Icon.js
+│   ├── InputField.js
+│   ├── JobCard.js
+│   ├── LoadingIndicator.js
+│   └── index.js
+├── config/
+│   ├── authConfig.js
+│   ├── firebaseConfig.js
+│   └── theme.js
+├── hooks/
+│   └── useTogglePasswordVisibility.js
+├── navigation/
+│   ├── AppStack.js
+│   ├── AuthStack.js
+│   ├── RootNavigator.js
+│   └── index.js
+├── screens/
+│   ├── FeedbackScreen.js
+│   ├── ForgotPasswordScreen.js
+│   ├── HomeScreen.js
+│   ├── LoginScreen.js
 │   └── SignupScreen.js
-│   └── HomeScreen.js
-├── App.js            # Application entry point
-└── app.config.js     # Expo configuration
+├── src/
+│   └── providers/
+│       ├── AuthenticatedUserProvider.js
+├── utils/
+    ├── helpers.js
+    ├── validation.js
+    └── yup.js
+
 ```
 
 ## Screenshots
