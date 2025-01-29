@@ -50,8 +50,6 @@ To create a local build or use a development build:
 # Build for Android
 npx expo run:android
 
-# Build for iOS
-npx expo run:ios
 ```
 
 ```plaintext
@@ -135,7 +133,7 @@ This application is licensed under the MIT License. See the [LICENSE](./LICENSE)
 
 ```
 
-Developed with by **Sabrina PAPEAU**.
+Developed by Sabrina PAPEAU 
 ```
 
 ## Social Media
