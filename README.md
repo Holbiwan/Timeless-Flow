@@ -1,7 +1,9 @@
-<img src="https://www.pngkey.com/png/detail/66-668612_under-construction-application-men-at-work-icon.png" 
-     alt="Under Construction" width="400" height="400">
+<p align="center">
+  <img src="https://www.pngkey.com/png/detail/66-668612_under-construction-application-men-at-work-icon.png" width="300">
+</p>
+   
 
-# Timeless Flow  🚀 Mobile app 
+# Timeless Flow  🚀 Mobile app  
 
 ### **"Bridging the gap with timeless talent”** 
 
