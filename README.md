@@ -71,65 +71,65 @@ npx expo run:android
 holbiwan-timeless-flow/
 ├── README.md
 ├── App.js
-├── Index.js
 ├── LICENSE
-├── app.config.js
-├── babel.config.js
-├── metro.config.js
 ├── package.json
-├── .yarnrc.yml
-├── android/
-│   ├── gradle.properties
-│   ├── gradlew*
-│   ├── app/
-│   │   ├── src/
-│   │   │   ├── debug/AndroidManifest.xml
-│   │   │   └── main/
-│   │   │       ├── AndroidManifest.xml
-│   │   │       ├── java/com/timeless/flow/
-│   │   │       │   ├── MainActivity.kt
-│   │   │       │   └── MainApplication.kt
-│   │   │       └── res/
-│   │   │           ├── drawable/ (logos, assets XML)
-│   │   │           ├── mipmap-*/ (icons for various resolutions)
-│   │   │           └── values/ (XML resources)
-│   └── gradle/wrapper/gradle-wrapper.properties
-├── assets/
-│   ├── fonts/ (custom fonts)
-│   ├── icons/
-│   └── images/
-├── components/
-│   ├── Button.js
-│   ├── FormErrorMessage.js
-│   ├── Icon.js
-│   ├── InputField.js
-│   ├── JobCard.js
-│   ├── LoadingIndicator.js
-│   └── index.js
 ├── config/
 │   ├── authConfig.js
 │   ├── firebaseConfig.js
-│   └── theme.js
-├── hooks/
-│   └── useTogglePasswordVisibility.js
+│   ├── theme.js
+├── components/
+│   ├── Button.js
+│   ├── FormErrorMessage.js
+│   ├── InputField.js
+│   ├── JobCard.js
+│   ├── LoadingIndicator.js
+│   ├── Logo.js
+│   └── index.js
+├── screens/
+│   ├── HomeScreen.js
+│   ├── LoginScreen.js
+│   ├── SignupScreen.js
+│   └── index.js
 ├── navigation/
 │   ├── AppStack.js
 │   ├── AuthStack.js
 │   ├── RootNavigator.js
 │   └── index.js
-├── screens/
-│   ├── FeedbackScreen.js
-│   ├── ForgotPasswordScreen.js
-│   ├── HomeScreen.js
-│   ├── LoginScreen.js
-│   └── SignupScreen.js
-├── src/
-│   └── providers/
-│       ├── AuthenticatedUserProvider.js
 ├── utils/
-    ├── helpers.js
-    ├── validation.js
-    └── yup.js
+│   ├── helpers.js
+│   ├── validation.js
+│   └── yup.js
+├── assets/
+│   ├── fonts/
+│   ├── icons/
+│   ├── images/
+├── android/
+│   ├── app/
+│   │   ├── src/
+│   │   │   ├── main/
+│   │   │   │   ├── AndroidManifest.xml
+│   │   │   │   ├── java/com/timeless/flow/
+│   │   │   │   ├── res/ (assets graphiques)
+│   ├── gradle/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── providers/
+│   │   ├── AuthenticatedUserProvider.js
+│   │   └── index.js
+├── my-app/ (Version Web React)
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Jobs.jsx
+│   │   │   ├── SignUp.jsx
+│   ├── vite.config.js
+├── html-css-version/
+│   ├── index.html
+│   ├── styles.css
+└── .yarnrc.yml
 
 ```
 
