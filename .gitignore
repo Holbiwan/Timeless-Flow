@@ -61,3 +61,4 @@ screens/Timeless-Flow.code-workspace
 google-services.json
 Timeless-Flow/android/app/google-services.json
 android/app/google-services.json
+.aider*
