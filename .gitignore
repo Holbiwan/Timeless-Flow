@@ -62,3 +62,41 @@ google-services.json
 Timeless-Flow/android/app/google-services.json
 android/app/google-services.json
 .aider*
+
+# Node.js & Yarn
+node_modules/
+.yarn/
+.yarnrc.yml
+package-lock.json
+
+# Build & transpilation
+dist/
+build/
+.cache/
+out/
+.vscode/
+.DS_Store
+
+# Android
+android/.gradle/
+android/app/build/
+android/app/debug.keystore
+android/local.properties
+
+# Credentials & Environment
+.env
+.env.local
+.env.development
+.env.production
+firebase.json
+google-services.json
+
+my-app-backup/
+*.log
+*.bak
+Thumbs.db
+
+TimelessLogo.png
+TimelessLogo.ico
+background.jpg
+background.png
