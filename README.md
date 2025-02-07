@@ -15,7 +15,7 @@
 
 **Timeless Flow** is a mobile application developed with **Expo** and **Firebase**, offering essential features for modern and intuitive management. This app includes login, signup, password reset, and secure home screens.
 
-## Screenshots
+## 📸 Screenshots 
 ![](https://zupimages.net/up/25/06/jlog.png) 
 
 ![](https://zupimages.net/up/25/06/rypc.png)
@@ -30,15 +30,16 @@
 
 ## Main Features
 
-- **Login and Signup with Firebase**
-- Password reset via email
-- User state management with Context API
-- Form validation with Formik and Yup
-- Protected navigation with `react-navigation`
-- Reusable and custom components
-- Environment variable management with `dotenv`
+✅ Login and Signup with Firebase
+✅ Password reset via email
+✅ User state management with Context API
+✅ Form validation with Formik and Yup
+✅ Protected navigation with react-navigation
+✅ Reusable and custom components
+✅ Environment variable management with dotenv
 
-## Installation
+
+## ⚙️ Installation 
 
 1. Clone this repository:
    ```bash
@@ -144,7 +145,7 @@ holbiwan-timeless-flow/
 - **Jest**: Unit tests
 - **Figma**: Design UI UX
 
-### License
+### 📜 License
 
 This application is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
@@ -153,7 +154,7 @@ This application is licensed under the MIT License. See the [LICENSE](./LICENSE)
 Developed by Sabrina PAPEAU 
 ```
 
-## Social Media
+## 🌍 My Social Media
 
 - **X (ex Twitter)**: [https://x.com/Holbiwan_Place](https://x.com/Holbiwan_Place)  
 - **LinkedIn**: [https://linkedin.com/in/sabrina-papeau](https://linkedin.com/in/sabrina-papeau)  
