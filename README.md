@@ -28,7 +28,7 @@
 
 ![](https://zupimages.net/up/25/06/q9b9.png)
 
-## Main Features
+## ✨ Main Features
 
 ✅ Login and Signup with Firebase
 ✅ Password reset via email
@@ -145,7 +145,7 @@ holbiwan-timeless-flow/
 - **Jest**: Unit tests
 - **Figma**: Design UI UX
 
-### 📜 License
+## 📜 License
 
 This application is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
