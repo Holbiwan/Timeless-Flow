@@ -39,7 +39,7 @@
 ✅ Environment variable management with dotenv
 
 
-## ⚙️ Installation 
+## 🖥️ Installation 
 
 1. Clone this repository:
    ```bash
@@ -136,7 +136,7 @@ holbiwan-timeless-flow/
 
 ```
 
-## Technologies Used
+## ⚡ Technologies Used
 
 - **Expo SDK**: For mobile app development
 - **Firebase**: Backend for authentication and data
