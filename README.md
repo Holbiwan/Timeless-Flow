@@ -2,15 +2,15 @@
 
 ### **"Bridging the gap with timeless talent”** 
 
+![Supports Expo iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)
+![Supports Expo Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)  
+
 ![Timeless Flow Demo](https://raw.githubusercontent.com/Holbiwan/Timeless-Flow/main/Timeless-Flow-Web-Version-mp4-ezgif.com-optimize.gif)
 
 ## 🎬 Demo Video 🎥  
 🔗 [Voir la démo sur Google Drive](https://drive.google.com/file/d/1P_fxDvkHHBMa3JQCIc-ZDc361CCI2uZZ/view?usp=sharing)
 
 
-![Supports Expo iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)
-![Supports Expo Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)  
--
 [![Runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
 **Timeless Flow** is a mobile application developed with **Expo** and **Firebase**, offering essential features for modern and intuitive management. This app includes login, signup, password reset, and secure home screens.
